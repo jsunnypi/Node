@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+   
+    
+    <style>@font-face {
+        font-family: 'MaruBuri';
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format("truetype");
+    }
+    
+    @font-face {
+        font-family: 'MaruBuriSemiBold';
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.ttf) format("truetype");
+    }
+    
+    @font-face {
+        font-family: 'MaruBuriBold';
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.ttf) format("truetype");
+    }
+    
+    @font-face {
+        font-family: 'MaruBuriLight';
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.ttf) format("truetype");
+    }
+    
+    @font-face {
+        font-family: 'MaruBuriExtraLight';
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.ttf) format("truetype");
+    }
+    
+    *{
+    box-sizing: border-box;
+}
+ body{
+    font-family: "MaruBuri";
+    background-color: lemonchiffon;
+    height: 100%;
+    margin: 0;
+}
+aside > #name > p{
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+#detail > ul > li{
+    font-weight: bold;
+    list-style-type: square;
+
+}
+
+aside > #sns >ul >li >a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li, p{
+    line-height: 1.5;
+    font-size: 1em;    
+    padding: 10px;
+}
+
+.container{
+    width: 900px;
+    height: 100%;/*
+    margin: 0 auto;*/
+    background-color: white;
+    margin-left: 50px;
+}
+.container .pf{
+    width: 210px;
+    height: 280px;
+}
+#main{
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.2em;
+    width: 60%;    
+}
+
+
+
+#main section .subtitle{
+    margin: 12px;
+    
+}
+aside{
+    width: 35%;
+    margin: 0 auto;
+    background-color: skyblue;
+    float: left;
+    height: 100%;
+    margin-top: 0;
+    padding: 20px 20px;
+}
+
+aside> #name > .pf{
+    padding: 30px;
+    padding-right: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 2px #fff;
+}
+
+#main > section{
+    padding-left : 200px;
+    border-bottom: 1px dotted black;
+    margin-top: 30px;
+    
+}
+
+.subtitle{
+    font-size: 1.5em;
+}
+
+#detail, #sns ul li{
+    list-style-type: square;}
+
+#sns ul li{
+    width: 80%;
+    padding: 10px;
+}
+
+#asia ul, #eu ul{
+    list-style: square;
+}
+
+
+table{
+    border: 1px solid #222;
+            border-collapse: collapse; 
+            width: 60%;
+}
+
+thead{
+    background-color: #fff;
+    }
+
+th, td{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div id="name">
+                <img src="doggy.jpg" class="pf">
+                <h1>이진선</h1>
+                <h3>Lee JinSeon</h3>
+                <p>ੈ✩‧₊♡。·˚˚·  ·˚˚·。♡* ˚* ੈ✩‧₊</p>
+            </div>
+
+            <div id="detail">
+                <h2>연락처</h2>
+                <ul>
+                    <li>email: appleorange0314@gmail.com</li>
+                    <li>phone: 010-1234-5678</li>
+                </ul>
+            </div>
+            
+            <div id="sns">
+                <h2>SNS</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/haneul_dolmengii/">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://m.blog.naver.com/dlwlstjs5298">NaverBlog</a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+    </div>
+
+    <div id="main">
+        <section>
+            <h2 class="subtitle">Like Things</h2>
+            <ul>
+                <li>Dog</li>
+                <li>Coffee</li>
+                <li>Music</li>
+                <li>Movie</li>
+                <li>Travel</li>
+            </ul>
+            
+        </section>
+
+
+        <section>
+            <h2 class="subtitle">Where I go</h2>
+            <ul>
+                <li id="asia">Asia
+                    <ul>
+                        <li>China</li>
+                        <li>Taiwan</li>
+                        <li>Vietnam</li>
+                        <li>Thai</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li id="eu">Europe
+                    <ul>
+                        <li>England</li>
+                        <li>France</li>
+                        <li>Italy</li>
+                        <li>Germany</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+
+        <section>
+        <h2 class="subtitle">학력</h2>
+        <table>
+            <caption>학력사항</caption>
+            <thead>
+                <tr>
+                    <th>출신 학교</th>
+                    <th>전공</th>
+                    <th>재학 기간</th>
+                    <th>구분</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>ㅁㅁ고등학교</td>
+                    <td>자연계</td>
+                    <td>2013.03 ~ 2016.02</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>ㅇㅇ대학교</td>
+                    <td>전자정보통신공학</td>
+                    <td>2016.03 ~ 2022.08</td>
+                    <td>졸업</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        
+    </div>
+
+
+</body>
+</html>
